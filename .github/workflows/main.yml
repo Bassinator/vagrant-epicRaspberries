@@ -26,4 +26,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install virtualbox vagrant
+    
+    - name: run vagrant up
+      run: |
         vagrant up
