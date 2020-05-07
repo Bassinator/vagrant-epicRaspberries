@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Setup EpicRaspberries
+Name[en_GB]=Setup EpicRaspberries
+GenericName=Setup EpicRaspberries
+GenericName[en_GB]=Setup EpicRaspberries
+Comment=install all needed tools for EpicRaspberry setup
+Comment[en_GB]=install all needed tools for EpicRaspberry setup
+Icon=rpi
+Exec=bash -c 'zenity --entry --text "Choose your provisioning profile." --entry-text "epicRaspberries" | xargs provision.sh; bash'
+StartupNotify=true
+Terminal=true
+Categories=Settings;DesktopSettings;GTK;X-LXDE-Settings;
