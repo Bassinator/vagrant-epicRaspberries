@@ -8,7 +8,6 @@ chmod a+x /bin/provision.sh
 SCRIPT
 
 Vagrant.configure("2") do |config|
-<<<<<<< HEAD
 #  config.vm.box = "Bassualdo/raspberryDesktop-buster-64bit"
 #  config.vm.box = "Bassualdo/raspberryDesktop" 
   config.vm.box = "Bassualdo/rpd-buster"
@@ -26,9 +25,6 @@ Vagrant.configure("2") do |config|
 
   config.ssh.password = "raspberry"
   config.ssh.username = "pi"
-
-  config.vm.provision "file", source: "provision.sh", destination: "/tmp/provision.sh"
-  config.vm.provision "file", source: "provision.desktop", destination: "/tmp/provision.desktop"
 
 
   config.vm.provision "shell", inline: $script
